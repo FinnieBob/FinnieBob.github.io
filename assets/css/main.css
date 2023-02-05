@@ -72,6 +72,13 @@ input, select, textarea {
 	appearance: none;
 }
 
+video
+{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
 /* Basic */
 
 	html {
