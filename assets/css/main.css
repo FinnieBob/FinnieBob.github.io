@@ -33,6 +33,11 @@ body {
 	line-height: 1;
 }
 
+paratext {
+	line-height: 0.5;
+}
+
+
 ol, ul {
 	list-style: none;
 }
@@ -93,7 +98,7 @@ video
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
-		line-height: 1.75em;
+		line-height: 1.3em;
 		color: #888;
 	}
 
