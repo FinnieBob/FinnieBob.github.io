@@ -24,7 +24,11 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#featured" id="featured-link"><span class="icon solid fa-star">Featured</span></a></li>
+								<li><a href="#games" id="games-link"><span class="icon solid fa-gamepad">Games</span></a></li>
+								<li><a href="#commercial" id="commercial-link"><span class="icon solid fa-briefcase">Commercial</span></a></li>
+								<li><a href="#simulation" id="simulation-link"><span class="icon solid fa-project-diagram">Simulation</span></a></li>
+								<li><a href="#research" id="research-link"><span class="icon solid fa-flask">R&amp;D / Tools</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
@@ -58,7 +62,7 @@
 							<header>
 								<h2 class="alt"> <strong>Robert Finnie<br></h2>
 								<h3 class="alt"> <strong>Designer, Developer, Engineer</strong></h3>
-								<p>Innovative and Highly Experienced Developer<br>Defence and Command and Control (C2) Systems, Electronic Warfare (EW) <br>Robotics, War Gaming, Simulations and VR.</p>
+								<p>Senior Software Engineer / Developer<br>Unity, C#, Games, Simulation &amp; Interactive 3D<br>Commercial, Training, Defence and R&amp;D.</p>
 							</header>
 
 							<footer>
@@ -74,99 +78,198 @@
 
 							<header>
 								<h2>Portfolio</h2>
+								<p class="portfolio-intro">A selection of games, commercial applications, simulation and training systems, and technical R&amp;D. Projects are grouped by the kind of work they demonstrate.</p>
 							</header>
 
-							<p>Some of the projects I have developed and worked on. This is a small selection to highlight my wide range of experience and disciplines.</p>
+							<!-- Portfolio category navigation -->
+							<nav class="portfolio-categories" aria-label="Portfolio categories">
+								<a href="#featured">Featured</a>
+								<a href="#games">Games</a>
+								<a href="#commercial">Commercial</a>
+								<a href="#simulation">Simulation &amp; Training</a>
+								<a href="#research">R&amp;D / Tools</a>
+							</nav>
 
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://robert-finnie.itch.io/t-65-combat-simulator" class="image fit"><img src="images/t65anim.gif" alt="" /></a>
-										<header>
-											<h3>'X-Wing' Combat Game VR<br>Oculus Quest 2 (Unity)</h3>
-											<p>This is my own fan made re-imagining of the classic LucasArts game 'X-Wing' developed for the Oculus Quest VR hardware.<br>Battle up to 32 AI bots over several scenarios inspired by the films or dogfight with other players in multiplayer.<br><br>(Click GIF to download game)</p>								
-										</header>
-										  <video class="video" controls autoplay loop>
-										  <source src="images/trshort.mp4" type="video/mp4">
-										  Your browser does not support the video tag.
-										</video> 
-										<header>
-											<h3>Death Star Trench Run, Oculus Quest 2 VR</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://www.hillarys.co.uk/products/food-babies-blossom-roman-blind/?visapppage=landing" class="image fit"><img src="images/hillarys-envision.png" alt="" /></a>
-										<header>
-											<h3>'Envision' 3D Interior Design/home furnishings product viewer.<br>(Android, Web)</h3>
-											<p>Developed novel 3D interior design/home furnishings app for Hillarys Blinds. The tool was developed for both Android standalone and web, allowing both advisors and customers to browse and visualise the products. Developed in both Unity and JS-React. The backend CMS was powered by AWS.<br><br>(Cick Image to use this tool)</p>								
-										</header>
-									</article>
+							<!-- Featured -->
+							<section id="featured" class="portfolio-group portfolio-featured">
+								<header class="portfolio-group-header">
+									<h3>Featured Projects</h3>
+									<p>Three projects that best demonstrate hands-on Unity development, commercial delivery, and interactive simulation.</p>
+								</header>
 
+								<div class="row">
+									<div class="col-4 col-12-mobile">
+										<article class="feature-card">
+											<a href="#games" class="image fit"><img src="images/t65anim.gif" alt="Oculus Quest 2 VR combat game" /></a>
+											<header>
+												<h3>VR Combat Game</h3>
+												<p><strong>Unity / C# · Oculus Quest 2 / PCVR</strong><br />Independently developed and published VR combat game featuring scenario-based gameplay, AI opponents and multiplayer.</p>
+												<a href="#games" class="button small">View project</a>
+											</header>
+										</article>
+									</div>
+
+									<div class="col-4 col-12-mobile">
+										<article class="feature-card">
+											<a href="#commercial" class="image fit"><img src="images/hillarys-envision.png" alt="Hillarys Envision 3D interior design application" /></a>
+											<header>
+												<h3>Envision</h3>
+												<p><strong>Commercial · Unity / React · Android / Web</strong><br />3D interior design and product visualisation application developed for Hillarys Blinds.</p>
+												<a href="#commercial" class="button small">View project</a>
+											</header>
+										</article>
+									</div>
+
+									<div class="col-4 col-12-mobile">
+										<article class="feature-card">
+											<a href="#simulation" class="image fit"><img src="images/CADUCEUS.png" alt="CADUCEUS electronic warfare training simulation" /></a>
+											<header>
+												<h3>CADUCEUS</h3>
+												<p><strong>Simulation &amp; Training · Real-time systems</strong><br />Interactive electronic-warfare training environment used to create scenarios and support collaborative learning.</p>
+												<a href="#simulation" class="button small">View project</a>
+											</header>
+										</article>
+									</div>
 								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/footy_anim.gif" alt="" /></a>
-										<header>
-											<h3>90's Retro Football Game<br>PC, Mac, Mobile (Unity)</h3>
-											<p>Inspired by Sensible Software's 1990s classic football game 'Sensible Soccer', this was originally created in the late 90's using my own game and physics engine in C++. I re-visitied this a few years ago and re-coded it in Unity using C# in order to experiment with AI and Machine Learning agents.<br>Faithful to the original, this game is fast, fluid, challenging and is great fun with 2 players</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pose estimate.gif" alt="" /></a>
-										<header>
-											<h3>Realtime 3D Pose Estimation & Mapping from Video</h3>
-											<p>This project used Unity and the Barracuda Neural Network inference library to provide realtime pose estimation from 2D video. The 2D skeleton was then transformed into a 3D model using inverse kinematics.<br>This was originally designed as an ad hoc motion capture tool to create character animations for other projects</p>
-										</header>
-									</article>
-																		<article class="item">
-										<a href="#" class="image fit"><img src="images/CADUCEUS.png" alt="" /></a>
-										<header>
-											<h3><strong>
-    CADUCEUS (EW Training & Simulation Suite)</strong></h3>
-	<p>Developed in conjunction with The Royal School of Signals (RSS)
-    This software training simulation was developed during my time at Cranfield University. It utilised the SPECTRA/THISTLE project. It was used by training staff to emulate a series of EW transmissions to be detected by students.
-    The exercise DS would provide students with a list of Electronic Warfare assets that can be deployed in specified areas of responsibility.
-    To aid the deployment of assets the tool has a number of communications testing functions that can be used to determine the optimum location for each asset.
-    Once deployment is complete, the scenario will run in real time enabling students to build-up a picture of troop movements based on detections made.
-    To aid construction of the movement picture, students within each cell can use the system to share information</p>
+							</section>
 
-										</header>
-									</article>
-									<article class="item">
-										  <video class="video" controls autoplay loop>
-										  <source src="images/GISDisplay.mp4" type="video/mp4">
-										  Your browser does not support the video tag.
-										</video> 
-										<header>
-											<h3><strong>Project 'THISTLE'. Command & Control (C2) Software Suite. British MoD, NATO C3A</strong></h3>
-								
-											<p>During my time at the Microprocessor Applications Group at Cranfield University, I was a lead developer and engineer on many projects for the British MoD and NATO. Main activity was the development of Command and Control, Communications Planning and Wargaming software tools with a focus on rapid prototyping. An broad suite of C3 tools, developed between 1994-2010, these were used extensively both in training and military exercise and deployed live in theatre (Bosnia & Afghanistan)</p>
-										</header>
-										
-									</article>
-									<article class="item">
-										  <video class="video" controls autoplay loop>
-										  <source src="images/VRO.mp4" type="video/mp4">
-										  Your browser does not support the video tag.
-										</video> 
-										<header>
-											<h3><strong>VR Conductor (Under Development)</strong></h3>
-								
-											<p>Part VR Rhythm Game, part DAW interaction toolkit. This project is both a rhythm game where the player takes on the role of an orchestra conductor and also a toolkit to control a digital audio workstation (DAW). Using common hand gestures, the conductor can affect the arrangement and playback of MIDI songs, from changing the tempo and intensity of the piece, to the fine tuning and voicing of individual members of the orchestra.</p>
-										</header>
-										
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/2008papercover.png" alt="" /></a>
-										<header>
-											<h3>One of the MSc projects I developed whilst at Cranfield University. This was published in the IET journal and focuses on using DSP techniques and image processing to enhance 3D meshes from colour texture information.</h3>
-										</header>
-									</article>
+							<!-- Games -->
+							<section id="games" class="portfolio-group">
+								<header class="portfolio-group-header">
+									<h3>Games</h3>
+									<p>Unity/C# game development, VR, gameplay systems and AI experimentation.</p>
+								</header>
 
+								<div class="row">
+									<div class="col-6 col-12-mobile">
+										<article class="item">
+											<a href="https://robert-finnie.itch.io/t-65-combat-simulator" class="image fit"><img src="images/t65anim.gif" alt="X-Wing combat game running on Oculus Quest 2" /></a>
+											<header>
+												<h3>‘X-Wing’ Combat Game VR<br />Oculus Quest 2 / PCVR · Unity</h3>
+												<p>My own fan-made re-imagining of the classic LucasArts game, developed for Oculus Quest VR hardware. Battle up to 32 AI bots across several scenarios or dogfight with other players in multiplayer. The project demonstrates hands-on Unity gameplay, AI, VR interaction and standalone-device development.</p>
+												<p><strong>My contribution:</strong> Independent developer, end-to-end Unity/C# development.<br /><strong>Release:</strong> itch.io / SideQuest.<br /><strong>Technical focus:</strong> real-time gameplay, AI and VR performance.</p>
+											</header>
+											<video class="video" controls autoplay loop muted>
+												<source src="images/trshort.mp4" type="video/mp4" />
+												Your browser does not support the video tag.
+											</video>
+											<header>
+												<h3>Death Star Trench Run · Oculus Quest 2 VR</h3>
+											</header>
+										</article>
+									</div>
+
+									<div class="col-6 col-12-mobile">
+										<article class="item">
+											<a href="#" class="image fit"><img src="images/footy_anim.gif" alt="Retro football game developed in Unity" /></a>
+											<header>
+												<h3>90s Retro Football Game<br />PC / Mac / Mobile · Unity / C#</h3>
+												<p>Originally created in the late 1990s using my own C++ game and physics engine, then revisited and re-coded in Unity using C# to experiment with AI and machine-learning agents. The project combines gameplay programming, physics, AI and cross-platform development.</p>
+											</header>
+										</article>
+									</div>
 								</div>
-							</div>
+							</section>
+
+							<!-- Commercial -->
+							<section id="commercial" class="portfolio-group">
+								<header class="portfolio-group-header">
+									<h3>Commercial / Client Projects</h3>
+									<p>Professional applications developed for real users, clients and production environments.</p>
+								</header>
+
+								<div class="row">
+									<div class="col-6 col-12-mobile">
+										<article class="item">
+											<a href="https://www.hillarys.co.uk/products/food-babies-blossom-roman-blind/?visapppage=landing" class="image fit"><img src="images/hillarys-envision.png" alt="Envision 3D interior design and home furnishings product viewer" /></a>
+											<header>
+												<h3>Envision · 3D Interior Design / Product Viewer<br />Android / Web · Unity / React / AWS</h3>
+												<p>Developed a 3D interior design and home furnishings application for Hillarys Blinds. The application allowed advisors and customers to browse, configure and visualise products in a realistic environment. Delivered for Android standalone and web, using Unity alongside JavaScript/React with an AWS-backed CMS.</p>
+												<p><strong>My contribution:</strong> Senior Software Engineer / Unity development.<br /><strong>Delivery:</strong> Commercial client application across Android and Web.<br /><strong>Technical focus:</strong> interactive 3D, cross-platform delivery and backend/content integration.</p>
+												<a href="https://www.hillarys.co.uk/products/food-babies-blossom-roman-blind/?visapppage=landing" class="button small">Launch application</a>
+											</header>
+										</article>
+									</div>
+								</div>
+							</section>
+
+							<!-- Simulation -->
+							<section id="simulation" class="portfolio-group">
+								<header class="portfolio-group-header">
+									<h3>Simulation &amp; Training</h3>
+									<p>Real-time simulation, wargaming, command-and-control and learning environments developed for training and operational use.</p>
+								</header>
+
+								<div class="row">
+									<div class="col-6 col-12-mobile">
+										<article class="item">
+											<a href="#" class="image fit"><img src="images/CADUCEUS.png" alt="CADUCEUS electronic warfare training and simulation suite" /></a>
+											<header>
+												<h3>CADUCEUS · EW Training &amp; Simulation Suite</h3>
+												<p>Developed in conjunction with the Royal School of Signals during my time at Cranfield University. The system used the SPECTRA/THISTLE project to emulate electronic-warfare transmissions for student exercises. Students deployed assets, tested communications locations, ran scenarios in real time and collaboratively built an operational picture from detections.</p>
+												<p><strong>My contribution:</strong> Software development and simulation engineering.<br /><strong>Use:</strong> Training environment for students and instructors.<br /><strong>Technical focus:</strong> scenario behaviour, real-time simulation and collaborative information handling.</p>
+											</header>
+										</article>
+									</div>
+
+									<div class="col-6 col-12-mobile">
+										<article class="item">
+											<video class="video" controls autoplay loop muted>
+												<source src="images/GISDisplay.mp4" type="video/mp4" />
+												Your browser does not support the video tag.
+											</video>
+											<header>
+												<h3>Project THISTLE · Command &amp; Control Software Suite<br />British MoD / NATO C3A</h3>
+												<p>Lead developer and engineer on a broad suite of C3, communications-planning and wargaming software tools developed between 1994 and 2010. The systems were used extensively in training and military exercises and deployed live in theatre, including Bosnia and Afghanistan.</p>
+												<p><strong>My contribution:</strong> Lead software developer / engineer.<br /><strong>Technical focus:</strong> C2 systems, rapid prototyping, GIS, simulation and high-reliability software.</p>
+											</header>
+										</article>
+									</div>
+								</div>
+							</section>
+
+							<!-- R&D / Tools -->
+							<section id="research" class="portfolio-group">
+								<header class="portfolio-group-header">
+									<h3>R&amp;D / Tools</h3>
+									<p>Technical experiments and research projects spanning computer vision, machine learning, signal processing and interactive tools.</p>
+								</header>
+
+								<div class="row">
+									<div class="col-4 col-12-mobile">
+										<article class="item">
+											<a href="#" class="image fit"><img src="images/pose estimate.gif" alt="Real-time 3D pose estimation and mapping" /></a>
+											<header>
+												<h3>Realtime 3D Pose Estimation &amp; Mapping</h3>
+												<p>Unity and Barracuda Neural Network inference used for realtime pose estimation from 2D video, transforming the resulting skeleton into a 3D model using inverse kinematics. Originally developed as an ad hoc motion-capture tool for character animation.</p>
+											</header>
+										</article>
+									</div>
+
+									<div class="col-4 col-12-mobile">
+										<article class="item">
+											<video class="video" controls autoplay loop muted>
+												<source src="images/VRO.mp4" type="video/mp4" />
+												Your browser does not support the video tag.
+											</video>
+											<header>
+												<h3>VR Conductor · Under Development</h3>
+												<p>Part VR rhythm game and part DAW interaction toolkit. Uses hand gestures to control MIDI playback, including tempo, intensity and individual orchestral parts.</p>
+											</header>
+										</article>
+									</div>
+
+									<div class="col-4 col-12-mobile">
+										<article class="item">
+											<a href="#" class="image fit"><img src="images/2008papercover.png" alt="IET-published digital signal and image processing research" /></a>
+											<header>
+												<h3>3D Mesh Enhancement · IET Published Research</h3>
+												<p>An MSc project developed at Cranfield University using digital signal processing and image-processing techniques to enhance 3D meshes from colour-texture information. The work was subsequently published in an IET journal.</p>
+											</header>
+										</article>
+									</div>
+								</div>
+							</section>
 
 						</div>
 					</section>
@@ -181,7 +284,7 @@
 
 								<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
-								<p>I am a Senior Software Engineer with over three decades of professional experience delivering complex, high-reliability software systems across defence, simulation, and advanced research domains. I am a full-stack engineer with deep expertise spanning multiple operating systems, programming languages, and architectural and design methodologies, and I have a consistent record of translating complex requirements into robust, maintainable solutions.<br><br> My technical background includes extensive hands-on experience in C, C++, C#, Python, Fortran, Pascal, and x86 assembly, alongside long-term work in Unity, real-time 3D, VR/XR, and immersive simulation technologies, including Oculus platforms. I have designed and delivered software for PC, Android, Linux, and UNIX environments, often operating at the intersection of software and hardware to meet demanding performance and reliability constraints.<br><br> I am an IET-published author in the field of Digital Signal and Image Processing and have contributed to both applied research and operational systems. In parallel with my industry work, I have designed and delivered MSc-level curricula, lectured at postgraduate level, supervised MSc dissertations, and served as a Viva examiner, reflecting a strong commitment to technical rigor, mentorship, and knowledge transfer.<br><br> Throughout my career, I have led and contributed to the development of mission-critical systems in areas including defence, command and control (C2), robotics, war-gaming, modelling and simulation, and virtual reality. I have worked with and for organisations such as the Royal School of Signals (UK Ministry of Defence), the NATO C3 Agency, and Cranfield University.<br><br> I am currently an independent software consultant and developer, providing expert-level technical leadership, system design, and hands-on development for clients requiring deep domain knowledge, architectural insight, and dependable delivery of complex software solutions.</p>
+								<p>I am a Senior Software Engineer with over two decades of professional experience delivering complex, high-reliability software systems across defence, simulation, and advanced research domains. I am a full-stack engineer with deep expertise spanning multiple operating systems, programming languages, and architectural and design methodologies, and I have a consistent record of translating complex requirements into robust, maintainable solutions.<br><br> My technical background includes extensive hands-on experience in C, C++, C#, Python, Fortran, Pascal, and x86 assembly, alongside long-term work in Unity, real-time 3D, VR/XR, and immersive simulation technologies, including Oculus platforms. I have designed and delivered software for PC, Android, Linux, and UNIX environments, often operating at the intersection of software and hardware to meet demanding performance and reliability constraints.<br><br> I am an IET-published author in the field of Digital Signal and Image Processing and have contributed to both applied research and operational systems. In parallel with my industry work, I have designed and delivered MSc-level curricula, lectured at postgraduate level, supervised MSc dissertations, and served as a Viva examiner, reflecting a strong commitment to technical rigor, mentorship, and knowledge transfer.<br><br> Throughout my career, I have led and contributed to the development of mission-critical systems in areas including defence, command and control (C2), robotics, war-gaming, modelling and simulation, and virtual reality. I have worked with and for organisations such as the Royal School of Signals (UK Ministry of Defence), the NATO C3 Agency, and Cranfield University.<br><br> I am currently an independent software consultant and developer, providing expert-level technical leadership, system design, and hands-on development for clients requiring deep domain knowledge, architectural insight, and dependable delivery of complex software solutions.</p>
 							</header>
 						</div>
 					</section>
