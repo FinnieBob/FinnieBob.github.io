@@ -1822,6 +1822,131 @@ video
 			padding-left: 0.25em;
 		}
 
+
+
+/* Portfolio organisation */
+
+	.portfolio-intro {
+		max-width: 55em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.portfolio-categories {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.65em;
+		margin: 2em 0 3em 0;
+	}
+
+		.portfolio-categories a {
+			display: inline-block;
+			padding: 0.45em 0.9em;
+			border: 1px solid #cfd6d5;
+			border-radius: 0.35em;
+			background: #fff;
+			color: #666;
+			font-size: 0.8em;
+			text-decoration: none;
+			transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+		}
+
+		.portfolio-categories a:hover {
+			background: #8ebebc;
+			border-color: #8ebebc;
+			color: #fff;
+		}
+
+	.portfolio-group {
+		margin: 4em 0 0 0;
+		padding-top: 3em;
+		border-top: 1px solid #ddd;
+		scroll-margin-top: 2em;
+	}
+
+		.portfolio-group:first-of-type {
+			border-top: 0;
+		}
+
+	.portfolio-group-header {
+		margin-bottom: 2em;
+	}
+
+		.portfolio-group-header h3 {
+			margin-bottom: 0.35em;
+		}
+
+		.portfolio-group-header p {
+			font-size: 0.85em;
+			max-width: 55em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	.portfolio-featured {
+		padding-top: 0;
+		border-top: 0;
+	}
+
+	.feature-card {
+		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.08);
+		background: #fff;
+		height: 100%;
+		margin-bottom: 40px;
+	}
+
+		.feature-card header {
+			margin: 0;
+			padding: 1.25em;
+			font-size: 0.8em;
+		}
+
+		.feature-card header h3 {
+			font-size: 1.15em;
+			margin-bottom: 0.5em;
+		}
+
+		.feature-card header p {
+			margin-bottom: 1em;
+		}
+
+	.button.small {
+		font-size: 0.8em;
+		padding: 0.55em 1.2em;
+	}
+
+	.portfolio-group .item header p {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 55em;
+	}
+
+	.portfolio-group .item header strong {
+		font-weight: 600;
+		color: #555;
+	}
+
+	.portfolio-group .video {
+		display: block;
+	}
+
+	@media screen and (max-width: 736px) {
+		.portfolio-categories {
+			gap: 0.4em;
+		}
+
+		.portfolio-categories a {
+			font-size: 0.75em;
+		}
+
+		.portfolio-group {
+			margin-top: 3em;
+			padding-top: 2em;
+		}
+	}
+
+
 /* Icons */
 
 	ul.icons {
