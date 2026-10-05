@@ -337,4 +337,25 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+<script>
+(function() {
+  // Only notify once per browser/session to reduce spam from refreshes
+  const key = 'portfolio_notified_' + location.pathname;
+  if (localStorage.getItem(key)) return;
+  localStorage.setItem(key, '1');
+
+  const webhook = 'https://discord.com/api/webhooks/1556682564716990646/O51f3oX6qkici_Jg3kFlJUbUD5lnWlE70Tt5Qb964e_V1YAMpQE_ZeGdhLodnYkk7Pcz'; // ← replace
+
+  const payload = {
+    content: `👀 New visitor on ${location.href}\nTime: ${new Date().toISOString()}\nReferrer: ${document.referrer || 'direct'}`
+  };
+
+  fetch(webhook, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).catch(() => {}); // silent fail
+})();
+</script>
+	
 </html>
