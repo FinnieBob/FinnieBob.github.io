@@ -30,6 +30,7 @@
 								<li><a href="#simulation" id="simulation-link"><span class="icon solid fa-project-diagram">Simulation</span></a></li>
 								<li><a href="#research" id="research-link"><span class="icon solid fa-flask">R&amp;D / Tools</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#cv" id="cv-link"><span class="icon solid fa-file-alt">CV</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -67,6 +68,7 @@
 
 							<footer>
 								<a href="#portfolio" class="button scrolly">Portfolio</a>
+							<a href="files/Robert_Finnie_CV.pdf" class="button" download="Robert_Finnie_CV.pdf">Download CV</a>
 							</footer>
 
 						</div>
@@ -289,6 +291,23 @@
 						</div>
 					</section>
 
+				<!-- CV -->
+					<section id="cv" class="three">
+						<div class="container">
+
+							<header>
+								<h2>CV / Resume</h2>
+								<p>A full overview of my experience, skills and publications is available as a PDF.</p>
+							</header>
+
+							<footer>
+								<a href="files/Robert_Finnie_CV.pdf" class="button" download="Robert_Finnie_CV.pdf">Download CV (PDF)</a>
+								<a href="files/Robert_Finnie_CV.pdf" class="button alt" target="_blank" rel="noopener">View in browser</a>
+							</footer>
+
+						</div>
+					</section>
+
 				<!-- Contact -->
 					<section id="contact" class="four">
 						<div class="container">
@@ -337,25 +356,4 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
-<script>
-(function() {
-  // Only notify once per browser/session to reduce spam from refreshes
-  const key = 'portfolio_notified_' + location.pathname;
-  if (localStorage.getItem(key)) return;
-  localStorage.setItem(key, '1');
-
-  const webhook = 'https://discord.com/api/webhooks/1556682564716990646/O51f3oX6qkici_Jg3kFlJUbUD5lnWlE70Tt5Qb964e_V1YAMpQE_ZeGdhLodnYkk7Pcz'; // ← replace
-
-  const payload = {
-    content: `👀 New visitor on ${location.href}\nTime: ${new Date().toISOString()}\nReferrer: ${document.referrer || 'direct'}`
-  };
-
-  fetch(webhook, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  }).catch(() => {}); // silent fail
-})();
-</script>
-	
 </html>
